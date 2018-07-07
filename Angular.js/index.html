@@ -1,0 +1,31 @@
+<! DOCTYPE html>
+<html>
+<head>
+  <title>
+  </title>
+  <script>
+    function par(){
+      this.par_n="Pavi";
+      this.par_c="1001";
+    }
+    var parObj = new Customer();
+    function uiToObject(){
+        parObj.par_n=document.getElementById('par_n').value;
+        parObj.par_c=document.getElementById('par_c').value;
+    }
+
+    function objectToUi(){
+        document.getElementById('dpn').innerHTML=parObj.par_n;
+        document.getElementById('dpc').innerHTML=parObj.par_c;
+    }
+  </script>
+</head>
+<body>
+  <div>
+    Participant Name :- <input type="text" id="par_n">
+    Participant Code :- <input type="text" id="par_c">
+    <div id="dpn"></div><br>
+    <div id="dpc"></div><br>
+  </div>
+</body>
+</html>
